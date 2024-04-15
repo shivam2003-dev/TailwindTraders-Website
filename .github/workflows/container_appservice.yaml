@@ -35,7 +35,7 @@ jobs:
          app-name: ${{ secrets.CONTAINER_APPSERVICE_NAME }}
          app-settings-json: '${{ secrets.CONTAINER_APP_SETTINGS }}'
 
-    - uses: azure/webapps-deploy@v2
+    - uses: azure/webapps-deploy@v3
       with:
         app-name: ${{ secrets.CONTAINER_APPSERVICE_NAME }}
         images: 'tailwindtraders/web:gh-${{ github.sha }}'
