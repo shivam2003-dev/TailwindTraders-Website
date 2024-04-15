@@ -35,7 +35,7 @@ jobs:
         creds: '${{ secrets.AZURE_CREDENTIALS }}'
 
     - name: Set AKS kubectl context
-      uses: azure/aks-set-context@v1
+      uses: azure/aks-set-context@v4
       with:
         creds: '${{ secrets.AZURE_CREDENTIALS }}'
         cluster-name: ${{ secrets.AKS_CLUSTER_NAME }}
